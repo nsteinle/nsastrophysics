@@ -136,7 +136,7 @@ img {
 /*==================== LAYOUT ====================*/
 .container {
   /* max-width: 768px; */
-  max-width: 1000px;
+  max-width: 900px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -269,15 +269,6 @@ img {
 
 .home__social-icon:hover{
   color: var(--first-color-alt);
-}
-
-.home__blob{
-  width: 200px;
-  fill: var(--first-color);
-}
-
-.home__blob-img{
-  width: 170px;
 }
 
 .home__data{
