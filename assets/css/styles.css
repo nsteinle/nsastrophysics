@@ -507,6 +507,38 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.contact__container {
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact__container > div,
+.contact__form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__container {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  .section__title,
+  .section__subtitle {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .contact__container > div,
+  .contact__form {
+    margin: initial;
+  }
+}
+
+
 
 
 
