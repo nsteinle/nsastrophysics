@@ -330,7 +330,10 @@ img {
 }
 
 
+
+
 /*==================== ABOUT ====================*/
+/*
 .about__img{
   width: 200px;
   border-radius: .5rem;
@@ -370,6 +373,29 @@ img {
   display: flex;
   justify-content: center;
 }
+*/
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.about__title {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.about__subtitle {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.about__data {
+  max-width: 800px;
+}
 
 
 
@@ -403,6 +429,7 @@ img {
 
 
 /*==================== CONTACT ME ====================*/
+/*
 .contact__container{
   row-gap: 3rem;
 }
@@ -454,6 +481,57 @@ img {
   padding: .25rem .5rem .5rem 0;
   text-align: center;
 }
+*/
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.contact__title {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.contact__subtitle {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.contact__form,
+.contact__info {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: var(--mb-2);
+}
+
+
+
+
+
+/*==================== Desktop Overrides ====================*/
+@media screen and (min-width: 768px) {
+  .about__container,
+  .contact__container {
+    padding: 6rem 2rem;
+  }
+
+  .contact__form,
+  .contact__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact__form,
+  .contact__info {
+    flex: 1 1 48%;
+  }
+}
+
+
 
 
 
