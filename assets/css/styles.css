@@ -612,6 +612,117 @@ img {
 .footer__link{
   color: #FFF;
 }
+/* Form container */
+.contact__form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* spacing between rows */
+}
+
+/* Title */
+.contact__title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+/* Inputs grid: only Name + Email side by side */
+.contact__inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Each field block */
+.contact__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input + textarea */
+.contact__input {
+  width: 100%;
+  padding: 14px 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #f9f9f9;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.contact__input:hover {
+  background: #f3f2ff;
+  border-color: #b6b1ff;
+}
+
+/* Focus effect */
+.contact__input:focus {
+  border-color: #6c63ff;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.25);
+}
+
+/* Floating label */
+.contact__label {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* When input has text or focus */
+.contact__input:focus + .contact__label,
+.contact__input:not(:placeholder-shown) + .contact__label {
+  top: -8px;
+  left: 12px;
+  font-size: 12px;
+  background: #fff;
+  padding: 0 5px;
+  color: #6c63ff;
+}
+
+/* Button */
+.button {
+  padding: 14px 22px;
+  border: none;
+  background: linear-gradient(135deg, #6c63ff, #836fff);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+/* Hover */
+.button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+}
+
+/* Responsive: stack Name & Email */
+@media (max-width: 600px) {
+  .contact__inputs {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 
