@@ -607,5 +607,16 @@ span {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+/* project list links */
+.pro a {
+  color: var(--main-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: 0.3s ease;
+}
 
+.pro a:hover {
+  color: var(--text-color);
+  text-shadow: 0 0 0.8rem var(--main-color);
+}
 
